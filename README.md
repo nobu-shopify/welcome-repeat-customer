@@ -1,3 +1,25 @@
+# Prerequisites
+
+In order to activate Functions discount, run below mutation (2023-07):
+```
+mutation {
+  discountAutomaticAppCreate(automaticAppDiscount: {
+    title: "Volume discount",
+    functionId: "YOUR_FUNCTION_ID_HERE",
+    startsAt: "2022-06-22T00:00:00"
+  }) {
+     automaticAppDiscount {
+      discountId
+     }
+     userErrors {
+      field
+      message
+     }
+  }
+}
+``` 
+where you can find your Functions ID in .env file or on the Partner Dashboard.
+
 # Shopify App Template - None (app with extensions only)
 
 This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) that includes no app home UI. It contains the basics for building a Shopify app that uses only app extensions.
