@@ -1,6 +1,6 @@
 # Prerequisites
 
-In order to activate Functions discount, run below mutation (2023-07):
+In order to activate Functions discount, run below mutation in your store with GraphiQL etc (API version: 2023-07):
 ```
 mutation {
   discountAutomaticAppCreate(automaticAppDiscount: {
